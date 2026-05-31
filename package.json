@@ -1,0 +1,14 @@
+{
+  "name": "mini-lm-data-pipeline",
+  "private": true,
+  "scripts": {
+    "dev": "node scripts/serve-static.js",
+    "build:data": "node scripts/build-training.js && node scripts/build-model.js",
+    "build:char-transformer": "node scripts/build-char-transformer.js",
+    "build:neural": "node scripts/build-neural-model.js",
+    "import:pairs": "node scripts/import-pairs.js",
+    "import:dailydialog": "node scripts/import-dailydialog.js",
+    "serve:local": "node scripts/serve-static.js",
+    "build:model": "node scripts/build-model.js"
+  }
+}
